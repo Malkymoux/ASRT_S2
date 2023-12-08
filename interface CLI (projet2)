@@ -1,0 +1,17 @@
+while true; do
+    echo "faites un choix:"
+    echo "1 création d'un nom hote"
+    echo "2 création d'un nouvel utilisateur"
+    echo "3 installer un logiciel"
+    echo "appuyez sur pour x quitter"
+
+    read choix
+
+    case $choix in
+    1) echo "Vous avez choisi de creer un nom d'hote." ;;
+    2) echo "Vous avez choisi de  créer un nouvel utilisateur." ;;
+    3) echo "Vous avez choisi d'installer un logiciel." ;;
+    x) echo "Au revoir."; break ;;
+    *) echo "Choix invalide. Veuiller entrer une option valide." ;;
+    esac
+done
